@@ -49,7 +49,7 @@ def transcribe_audio(audio_path):
 def summarize_with_groq(transcript):
     try:
         headers = {
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer gsk_M***************************Gk5",
             "Content-Type": "application/json"
         }
 
@@ -170,3 +170,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
