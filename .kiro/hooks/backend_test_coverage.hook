@@ -1,0 +1,20 @@
+{
+    "name": "Backend Test Coverage",
+    "description": "Ensures backend Python test coverage is updated when backend code changes.",
+    "trigger": {
+      "type": "file",
+      "events": ["save"],
+      "patterns": [
+        "PodiFy/backend/**/*.py"
+      ]
+    },
+    "action": {
+      "type": "agent",
+      "request": "Python backend files have been modified. Please identify new or modified functions, ensure tests exist for them, and update test coverage reports."
+    },
+    "settings": {
+      "autoRun": true,
+      "showInStatusBar": true
+    }
+  }
+  

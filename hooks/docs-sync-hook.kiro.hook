@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "name": "Transcript Summary",
+  "description": "Automatically summarizes transcripts generated from audio files.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered",
+    "patterns": [
+      "*.py",
+      "*.js",
+      "*.ts",
+      "*.jsx",
+      "*.tsx",
+      "package.json",
+      "requirements.txt",
+      "*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "When a new transcript text file is added to the outputs folder:\n1. Read the transcript content.\n2. Use the Groq LLM (llama-3.1-8b-instant) to generate a summary.\n3. Save the summary in the same folder with filename ending _summary.txt (e.g., audio1_summary.txt).\n4. Ensure the summary is concise for short transcripts and detailed for long transcripts.\n"
+  }
+}

@@ -1,0 +1,8 @@
+[0.00s - 8.12s] Today we're interviewing Dr. Sarah Johnson, a leading researcher in quantum computing.
+[8.12s - 15.34s] Dr. Johnson, can you tell us about your recent breakthrough in quantum error correction?
+[15.34s - 28.56s] Certainly. We've developed a new algorithm that reduces quantum decoherence by 40% compared to previous methods.
+[28.56s - 42.78s] This is significant because quantum computers are extremely sensitive to environmental interference.
+[42.78s - 55.90s] Our approach uses a novel encoding scheme that distributes quantum information across multiple qubits.
+[55.90s - 68.12s] The implications for cryptography and drug discovery are enormous.
+[68.12s - 75.34s] We expect to see practical applications within the next five years.
+[75.34s - 82.56s] Thank you Dr. Johnson for sharing your insights with us today.

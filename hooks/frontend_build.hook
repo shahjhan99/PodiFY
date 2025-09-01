@@ -1,0 +1,23 @@
+{
+    "name": "Frontend Build Trigger",
+    "description": "Automatically triggers frontend build or lints when React/JS files or package files change.",
+    "trigger": {
+      "type": "file",
+      "events": ["save"],
+      "patterns": [
+        "PodiFy/frontend/**/*.js",
+        "PodiFy/frontend/**/*.jsx",
+        "PodiFy/package.json",
+        "PodiFy/package-lock.json"
+      ]
+    },
+    "action": {
+      "type": "agent",
+      "request": "React frontend files or package files have changed. Please run linting and build tasks to ensure frontend code consistency. Update documentation if necessary."
+    },
+    "settings": {
+      "autoRun": true,
+      "showInStatusBar": true
+    }
+  }
+  
