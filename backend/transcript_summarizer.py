@@ -57,7 +57,7 @@ def process_transcript_file(file_path):
     """
     Process a single transcript file and generate its summary
     """
-    api_key = "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"
+    api_key = "gsk_3*******************************Xh"
     
     try:
         # Read transcript content

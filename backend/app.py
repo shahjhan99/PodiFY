@@ -5,6 +5,8 @@ import uvicorn
 import os
 import tempfile
 import requests
+from dotenv import load_dotenv
+
 
 app = FastAPI()
 
@@ -19,15 +21,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 # -------------------------
 # Whisper Model (CPU)
 # -------------------------
 model = WhisperModel("small", device="cpu")
 
+
+# Load .env file
+load_dotenv()
 # -------------------------
 # Groq API Key
 # -------------------------
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.getenv("your_real_key_here")
+
 
 # Global variable to store latest summary
 summary = ""
@@ -123,3 +131,4 @@ def get_current_summary():
 # -------------------------
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+ 
